@@ -124,3 +124,43 @@ footer {
   margin-top: 10px;
   padding: 15px;
 }
+
+#ham-icon-container {
+  color: #f2f2f2;
+}
+
+#ham-icon-container {
+  display: none;
+}
+#ham-icon-container li {
+  list-style: none;
+}
+
+#ham-icon-container li > a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+@media (max-width: 850px) {
+  #ham-icon-container {
+    display: block;
+    margin: 0;
+  }
+  #ham-icon-container i {
+    font-size: 2rem;
+    margin: 0px;
+  }
+  #nav-links {
+    display: none;
+  }
+  #about {
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .bg-btn {
+    display: none;
+  }
+  #home-main h2 {
+    margin: 0;
+  }
+}
