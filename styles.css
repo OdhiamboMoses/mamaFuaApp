@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#nav-container {
+  height: 100px;
+  width: 100%;
+  color: whitesmoke;
+  background-color: #736d6d;
+  padding: 10px 15px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  background-color: whitesmoke;
+  padding: 10px;
+  color: #141010;
+  border-radius: 5px;
+  border: 1px solid orange;
+}
+
+#nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.25rem;
+  padding: 10px;
+}
+
+#nav-links ul > li {
+  list-style: none;
+  margin: 10px;
+}
+#nav-links ul > li > a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+#home {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("images/cleanup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+
+#home span {
+  color: #138817;
+  text-shadow: 1px 1px#141010;
+}
+.home-display-footer {
+  height: 80px;
+  width: 100%;
+  background-color: #736d6d;
+}
+
+#home-main h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  padding: 34px 20px;
+  line-height: 6rem;
+  color: #141010;
+  text-shadow: 1px 2px 2px #138817;
+}
+
+.bg-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  top: 260px;
+  font-size: 2rem;
+  color: #736d6d;
+}
+
+#about {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.65rem;
+  padding: 25px;
+  text-align: center;
+}
+
+.left p,
+h3 {
+  margin: 10px;
+  line-height: 50px;
+}
+
+.left h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 40px;
+}
