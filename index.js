@@ -19,7 +19,6 @@ previousBtn.addEventListener("click", function () {
 menuIcon.addEventListener("click", function () {
   if (menuContainer.style.display === "none" && menuIcon) {
     menuContainer.style.display = "block";
-    menuContainer.style.left = "430px";
   } else {
     menuContainer.style.display = "none";
   }

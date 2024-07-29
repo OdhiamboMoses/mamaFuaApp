@@ -17,7 +17,7 @@
 #logo {
   background-color: whitesmoke;
   padding: 10px;
-  color: #141010;
+  color: #736d6d;
   border-radius: 5px;
   border: 1px solid orange;
 }
@@ -233,4 +233,10 @@ footer {
   color: #138817;
   z-index: 101;
   box-shadow: 1px 2px 2px black;
+}
+
+#login-home {
+  height: 85vh;
+  width: 100%;
+  position: relative;
 }
