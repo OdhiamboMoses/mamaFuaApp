@@ -21,6 +21,9 @@
   border-radius: 5px;
   border: 1px solid orange;
 }
+#nav-links {
+  position: relative;
+}
 
 #nav-links ul {
   display: flex;
@@ -139,6 +142,40 @@ footer {
 #ham-icon-container li > a {
   text-decoration: none;
   color: #f2f2f2;
+}
+
+#menu-container {
+  width: 35%;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: none;
+  position: relative;
+  right: 0;
+  z-index: 100;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+}
+#menu-container li {
+  margin: 10px 0;
+  width: 100%;
+  list-style: none;
+  padding: 10px;
+  background-color: #736d6d;
+}
+#menu-container ul > li > a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+#close-btn {
+  position: absolute;
+  color: red;
+  right: 2px;
+  font-size: 2rem;
+}
+
+#close-btn:hover {
+  cursor: pointer;
 }
 @media (max-width: 850px) {
   #ham-icon-container {
