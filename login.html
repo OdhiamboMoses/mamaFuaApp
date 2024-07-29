@@ -22,8 +22,8 @@
           </div>
           <div id="nav-links">
             <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="index.html">ABOUT</a></li>
               <li><a href="#">LOGIN</a></li>
               <li>
                 <a href="#">SIGN-UP <i class="fa-solid fa-caret-down"></i></a>
@@ -50,12 +50,33 @@
       </nav>
     </header>
     <main>
-      <section id="login-home"></section>
+      <section id="login-home">
+        <div id="login-form">
+          <div id="form-title">
+            <h2>LOGIN FORM</h2>
+          </div>
+          <div class="login-body">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+            />
+            <input
+              type="text"
+              name="password"
+              id="userPassword"
+              placeholder="Enter Password"
+            />
+            <button id="login-btn">LOGIN</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <p></p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
