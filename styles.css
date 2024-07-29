@@ -155,13 +155,19 @@ footer {
   position: absolute;
   background-color: white;
   border-radius: 5px;
+  animation: menuAnim 2s linear 1s;
 }
 #menu-container li {
-  margin: 10px 0;
+  margin: 5px 0;
   width: 100%;
   list-style: none;
   padding: 10px;
   background-color: #736d6d;
+}
+
+#menu-container li:hover {
+  background-color: #138817;
+  cursor: pointer;
 }
 #menu-container ul > li > a {
   text-decoration: none;
@@ -199,5 +205,15 @@ footer {
   }
   #home-main h2 {
     margin: 0;
+  }
+}
+
+@keyframes menuAnim {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
