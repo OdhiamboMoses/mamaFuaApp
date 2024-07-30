@@ -24,9 +24,10 @@
             <ul>
               <li><a href="index.html">HOME</a></li>
               <li><a href="index.html">ABOUT</a></li>
-              <li><a href="#">LOGIN</a></li>
               <li>
-                <a href="#">SIGN-UP <i class="fa-solid fa-caret-down"></i></a>
+                <a href="signup.html"
+                  >SIGN-UP <i class="fa-solid fa-caret-down"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -39,12 +40,12 @@
         <div id="menu-container">
           <i class="fa-solid fa-circle-xmark" id="close-btn"></i>
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="#">LOGIN</a></li>
-            <li>
-              <a href="#">SIGN-UP <i class="fa-solid fa-caret-down"></i></a>
-            </li>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="index.html"><li>ABOUT</li></a>
+            <a href="#"><li>LOGIN</li></a>
+            <a href="signup.html"
+              ><li>SIGN-UP <i class="fa-solid fa-caret-down"></i></li
+            ></a>
           </ul>
         </div>
       </nav>
@@ -56,19 +57,21 @@
             <h2>LOGIN FORM</h2>
           </div>
           <div class="login-body">
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Enter Username"
-            />
-            <input
-              type="text"
-              name="password"
-              id="userPassword"
-              placeholder="Enter Password"
-            />
-            <button id="login-btn">LOGIN</button>
+            <form action="#">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+              />
+              <input
+                type="password"
+                name="password"
+                id="userPassword"
+                placeholder="Enter Password"
+              />
+              <button id="login-btn" type="submit">LOGIN</button>
+            </form>
           </div>
         </div>
       </section>
