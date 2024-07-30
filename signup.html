@@ -54,84 +54,102 @@
           </div>
           <div id="signup-body">
             <form action="#" id="signup">
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Enter First Name"
-              />
-              <input
-                type="password"
-                name="password"
-                id="userPassword"
-                placeholder="Enter Last Name"
-              />
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Enter First Name"
-              />
-              <input
-                type="password"
-                name="password"
-                id="userPassword"
-                placeholder="Enter Last Name"
-              />
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Enter First Name"
-              />
-              <input
-                type="password"
-                name="password"
-                id="userPassword"
-                placeholder="Enter Last Name"
-              />
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Enter First Name"
-              />
-              <input
-                type="password"
-                name="password"
-                id="userPassword"
-                placeholder="Enter Last Name"
-              />
-              <input
-                type="password"
-                name="password"
-                id="userPassword"
-                placeholder="Enter Last Name"
-              />
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Enter First Name"
-              />
-              <input
-                type="password"
-                name="password"
-                id="userPassword"
-                placeholder="Enter Last Name"
-              />
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Enter First Name"
-              />
-              <input
-                type="password"
-                name="password"
-                id="userPassword"
-                placeholder="Enter Last Name"
-              />
+              <fieldset>
+                <legend>Enter your Name</legend>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Enter First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Enter Last Name"
+                  required
+                />
+              </fieldset>
+
+              <fieldset>
+                <legend>Choose Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" />
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" />
+              </fieldset>
+              <div class="location-container">
+                <label for="location">Location</label>
+                <select name="location" id="location">
+                  <option value="">
+                    ---------------------------------------------
+                  </option>
+                  <option value="Nairobi">Nairobi</option>
+                  <option value="Nairobi">Kisumu</option>
+                  <option value="Nairobi">Mombassa</option>
+                  <option value="Nairobi">Siaya</option>
+                  <option value="Nairobi">Eldoret</option>
+                  <option value="Nairobi">Nakuru</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="idNo">Enter ID Number</label>
+                <input
+                  type="number"
+                  name="idNo"
+                  id="idNo"
+                  class="inp"
+                  placeholder="Enter ID number"
+                  required
+                />
+              </div>
+
+              <fieldset id="Verification">
+                <legend>Verification Documents</legend>
+                <div>
+                  <label for="idPic">Upload your ID</label>
+                  <input type="file" name="idPic" id="idPic" required />
+                </div>
+                <div>
+                  <label for="profilePic">Upload your profile Picture</label>
+                  <input
+                    type="file"
+                    name="profilePic"
+                    id="profilePic"
+                    required
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset id="acc-info">
+                <legend>Account Details</legend>
+                <label for="accType">Account Type</label>
+                <select name="acc-type" id="acc-type" class="inp">
+                  <option value="">-----------------------</option>
+                  <option value="Apartment Owner">Apartment Owner</option>
+                  <option value="Personal">Personal</option>
+                </select>
+                <label for="password">Enter Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="inp"
+                  placeholder="Enter Password"
+                  pattern="[A-Za-z0-9]{8}"
+                />
+                <label for="cpassword">Confirm Password</label>
+                <input
+                  type="password"
+                  name="cpassword"
+                  id="cpassword"
+                  class="inp"
+                  placeholder="Confirm Password"
+                  pattern="[A-Za-z0-9]{8}"
+                />
+              </fieldset>
               <button id="login-btn" type="submit">SIGN-UP</button>
             </form>
           </div>
